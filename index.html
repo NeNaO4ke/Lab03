@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <title>buy list</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+<div class="bl-background">
+    <div class="bl-list">
+        <div class="bl-inputForm">
+            <input id="inpId" class="bl-text" type="text" placeholder="Назва товару">
+            <button  data-tooltip="Додати" class="bl-addButton">Додати</button>
+        </div>
+        <div class="bl-row">
+            <div id="Pomidor" class="bl-products">
+                <input class="bl-productName" type="text" value="Помідори">
+                <div class="bl-count">
+                    <button data-tooltip="Зменшити" class="bl-minus">-</button>
+                    <span data-tooltip="Кількість" class="bl-label">1</span>
+                    <button data-tooltip="Збільшити" id="br1" class="bl-plus">+</button>
+                </div>
+                <div class="bl-buttons">
+                    <button data-tooltip="Відмінити" class="bl-nobuy non-disp">Не куплено</button>
+                    <button data-tooltip="Придбати" class="bl-buy">Куплено</button>
+                    <button  data-tooltip="Видалити" class="bl-delete">×</button>
+                </div>
+            </div>
+            <div id="Pech" class="bl-products">
+                <input class="bl-productName" type="text" value="Печиво">
+                <div class="bl-count">
+                    <button data-tooltip="Зменшити" class="bl-minus">-</button>
+                    <span data-tooltip="Кількість" class="bl-label">1</span>
+                    <button data-tooltip="Збільшити" id="br2" class="bl-plus">+</button>
+                </div>
+                <div class="bl-buttons">
+                    <button data-tooltip="Відмінити" class="bl-nobuy non-disp">Не куплено</button>
+                    <button data-tooltip="Придбати" class="bl-buy">Куплено</button>
+                    <button  data-tooltip="Видалити" class="bl-delete">×</button>
+                </div>
+            </div>
+            <div id="Syr" class="bl-products">
+                <input class="bl-productName" type="text" value="Сир">
+                <div class="bl-count">
+                    <button data-tooltip="Зменшити" class="bl-minus">-</button>
+                    <span data-tooltip="Кількість" class="bl-label">1</span>
+                    <button data-tooltip="Збільшити"id="br3" class="bl-plus">+</button>
+                </div>
+                <div class="bl-buttons">
+                    <button data-tooltip="Відмінити" class="bl-nobuy non-disp">Не куплено</button>
+                    <button data-tooltip="Придбати" class="bl-buy">Куплено</button>
+                    <button data-tooltip="Видалити" class="bl-delete">×</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bl-bought">
+        <div id='headTitle' class="bl-title">Залишилося</div>
+        <div class="bl-left">
+            <div id="Pomidor" class="bl-leftProduct">
+                <div class="bl-nameOfProduct">Помідори</div>
+                <div class="bl-productsNumber">1</div>
+            </div>
+            <div id="Pech" class="bl-leftProduct">
+                <div class="bl-nameOfProduct">Печиво</div>
+                <div class="bl-productsNumber">1</div>
+            </div>
+            <div id="Syr" class="bl-leftProduct">
+                <div class="bl-nameOfProduct">Сир</div>
+                <div class="bl-productsNumber">1</div>
+            </div>
+        </div>
+        <div class="bl-title">Куплено</div>
+        <div class="bl-alreadyBought">
+
+        </div>
+    </div>
+    <div class="bl-badge">
+        <div class="badge-title">Buy List</div>
+        <div class="badge-bot"> Created by:<br>Tykhyi Roman</div>
+    </div>
+</div>  
+    <div class="hidden">
+        <div id="notB">
+     <div id="notBoughtId" class="bl-leftProduct">
+                <div id="inpBought" class="bl-nameOfProduct">DSAD</div>
+                <div class="bl-productsNumber">1</div>
+            </div>
+            </div>
+    <div id="inpStat">
+        <div class="bl-products">
+                <input id="inpTo" class="bl-productName" type="text">
+                <div class="bl-count">
+                    <button data-tooltip="Зменшити" class="bl-minus">-</button>
+                    <span data-tooltip="Кількість" class="bl-label">1</span>
+                    <button data-tooltip="Збільшити"  class="bl-plus">+</button>
+                </div>
+                <div class="bl-buttons">
+                    <button data-tooltip="Відмінити" class="bl-nobuy non-disp">Не куплено</button>
+                    <button data-tooltip="Придбати" class="bl-buy">Куплено</button>
+                    <button  data-tooltip="Видалити" class="bl-delete">×</button>
+                </div>
+            </div>
+    </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript"src="main.js"> </script>
+</body>
+</html>
